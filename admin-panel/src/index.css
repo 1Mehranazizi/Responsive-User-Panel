@@ -16,3 +16,36 @@ a {
 ul {
   list-style: none;
 }
+
+.container {
+  width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 18rem auto;
+}
+
+.test {
+  height: 100vh;
+  background-color: blue;
+}
+
+@media(max-width:1200px) {
+  .container {
+    width: auto;
+    padding: 0 2rem;
+  }
+}
+
+@media(max-width:990px) {
+  .container {
+    grid-template-columns: 5rem auto;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+}

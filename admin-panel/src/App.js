@@ -1,8 +1,11 @@
+//Components
+import SideBar from "./SideBar";
 
 function App() {
   return (
-    <div>
-      سلام
+    <div className="container">
+      <SideBar />
+      <div className="test"></div>
     </div>
   );
 }

@@ -1,0 +1,147 @@
+.sideBar , .sidebarOpen {
+  position: relative;
+  box-shadow: 0 5px 25px rgba(116, 116, 116, 0.2);
+  height: 100vh;
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  transition: right .4s ease;
+}
+
+.userProfile {
+  position: relative;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.userProfile img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.userName p {
+  color: #666;
+  font-family: yekanBakhBold;
+}
+
+.userName small {
+  color: #aaaaaa;
+  font-family: iranYekanFn;
+}
+
+.Navbar {
+  position: absolute;
+  width: 100%;
+  margin-top: 4rem;
+  right: 0;
+  overflow: hidden;
+}
+
+.navItem , .active {
+  position: relative;
+  width: 100%;
+}
+
+.navItem a , .active a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.navItem:last-child a , .active:last-child a {
+    color: #FFACAC;
+    background-color: transparent;
+}
+
+.active a::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: #4274de;
+  right: 0;
+}
+
+.active a {
+    background-color: #E1F2FF;
+    color: #4274de;
+}
+
+.icon {
+  text-align: center;
+  font-size: 1.6rem;
+  height: 60px;
+  line-height: 70px;
+  min-width: 60px;
+}
+
+.title {
+  font-size: 1.1rem;
+  height: 60px;
+  line-height: 60px;
+}
+
+.openHandler{
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: -60px;
+  z-index: 300;
+}
+
+.openHandlerButton {
+  position: relative;
+}
+
+.openHandlerButton img {
+  width: 90px;
+}
+.rightArrow , .leftArrow {
+  color: rgb(177, 177, 177);
+  font-size: 3rem;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  transition: transform .4s ease;
+}
+
+.leftArrow {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 990px) {
+  .userProfile img {
+    width: 45px;
+    margin-left: 20px;
+  }
+
+  .title {
+  padding-right: 20px;
+  }
+
+  .icon {
+      padding-right: 15px;
+  }
+}
+
+@media (max-width:768px) {
+  .sideBar {
+    position: fixed;
+    right: -170px;
+  }
+
+  .openHandler {
+    display: block;
+  }
+
+  .sidebarOpen {
+    position: fixed;
+    right: 0;
+    width: 250px;
+  }
+
+}
