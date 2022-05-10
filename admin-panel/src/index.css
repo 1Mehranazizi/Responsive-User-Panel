@@ -25,11 +25,6 @@ ul {
   grid-template-columns: 18rem auto;
 }
 
-.test {
-  height: 100vh;
-  background-color: blue;
-}
-
 @media(max-width:1200px) {
   .container {
     width: auto;

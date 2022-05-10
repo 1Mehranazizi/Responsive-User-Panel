@@ -1,4 +1,4 @@
-.sideBar , .sidebarOpen {
+.sideBar{
   position: relative;
   box-shadow: 0 5px 25px rgba(116, 116, 116, 0.2);
   height: 100vh;
@@ -39,12 +39,12 @@
   overflow: hidden;
 }
 
-.navItem , .active {
+.navItem {
   position: relative;
   width: 100%;
 }
 
-.navItem a , .active a {
+.navItem a  {
   position: relative;
   width: 100%;
   display: flex;
@@ -52,23 +52,23 @@
   color: #666;
 }
 
-.navItem:last-child a , .active:last-child a {
+.navItem:last-child a {
     color: #FFACAC;
     background-color: transparent;
 }
 
-.active a::before {
+.navItem.active a {
+  background-color: #E1F2FF;
+  color: #4274de;
+}
+
+.navItem.active a::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 5px;
   background-color: #4274de;
   right: 0;
-}
-
-.active a {
-    background-color: #E1F2FF;
-    color: #4274de;
 }
 
 .icon {
@@ -138,8 +138,7 @@
     display: block;
   }
 
-  .sidebarOpen {
-    position: fixed;
+  .sideBar.sidebarOpen {
     right: 0;
     width: 250px;
   }

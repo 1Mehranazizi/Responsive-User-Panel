@@ -16,7 +16,7 @@ import { sideBarData } from "./data/sideBarData";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <aside className={openMenu ? styles.sidebarOpen : styles.sideBar}>
+    <aside className={openMenu ? `${styles.sidebarOpen} ${styles.sideBar}` : `${styles.sideBar}`}>
       <div className={styles.openHandler}>
         <div
           className={styles.openHandlerButton}
@@ -42,8 +42,8 @@ const Navbar = () => {
               key={item.title}
               className={
                 window.location.pathname === item.path
-                  ? styles.active
-                  : styles.navItem
+                  ? `${styles.active} ${styles.navItem}`
+                  : `${styles.navItem}`
               }
             >
               <a href={item.path}>
