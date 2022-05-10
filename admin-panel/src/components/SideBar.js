@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 //Styles
 import styles from "./SideBar.module.css";
@@ -16,7 +17,13 @@ import { sideBarData } from "../data/sideBarData";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <aside className={openMenu ? `${styles.sidebarOpen} ${styles.sideBar}` : `${styles.sideBar}`}>
+    <aside
+      className={
+        openMenu
+          ? `${styles.sidebarOpen} ${styles.sideBar}`
+          : `${styles.sideBar}`
+      }
+    >
       <div className={styles.openHandler}>
         <div
           className={styles.openHandlerButton}
@@ -40,16 +47,17 @@ const Navbar = () => {
           return (
             <li
               key={item.title}
+              onClick={() => setOpenMenu(!openMenu)}
               className={
                 window.location.pathname === item.path
                   ? `${styles.active} ${styles.navItem}`
                   : `${styles.navItem}`
               }
             >
-              <a href={item.path}>
+              <Link to={item.path}>
                 <span className={styles.icon}>{item.icon}</span>
                 <span className={styles.title}>{item.title}</span>
-              </a>
+              </Link>
             </li>
           );
         })}

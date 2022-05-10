@@ -25,6 +25,12 @@ ul {
   grid-template-columns: 18rem auto;
 }
 
+.page-title {
+  color: #666;
+  text-align: center;
+  margin: 3rem 0;
+}
+
 @media(max-width:1200px) {
   .container {
     width: auto;
