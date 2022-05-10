@@ -132,6 +132,7 @@
   .sideBar {
     position: fixed;
     right: -170px;
+    z-index: 100;
   }
 
   .openHandler {

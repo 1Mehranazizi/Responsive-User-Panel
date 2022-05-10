@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import styles from "./SideBar.module.css";
 
 //Imags
-import UserProfile from "./assets/img/user.png";
-import MenuBg from "./assets/img/arrowbottom.svg";
+import UserProfile from "../assets/img/user.png";
+import MenuBg from "../assets/img/arrowbottom.svg";
 
 //Icons
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 //Data
-import { sideBarData } from "./data/sideBarData";
+import { sideBarData } from "../data/sideBarData";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
