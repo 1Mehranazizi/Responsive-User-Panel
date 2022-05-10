@@ -1,0 +1,11 @@
+.myAddress iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(112, 112, 112, .2);
+}
+
+.myAddress p {
+    text-align: center;
+    margin-top: 1rem;
+}

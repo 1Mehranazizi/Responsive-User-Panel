@@ -1,0 +1,30 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard-card {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(112, 112, 112, .2);
+    background-color: #fff;
+}
+
+.dashboard-card__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.dashboard-card__header h3 {
+    color: #666;
+}
+
+@media(max-width:768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}

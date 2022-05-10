@@ -1,0 +1,23 @@
+.card {
+    padding: 1rem 2rem;
+    background: linear-gradient(180deg, #FB3A3A , #7B0F0F);
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(112, 112, 112, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.bankNum {
+    word-spacing: 2rem;
+    font-size: 1.2rem;
+    font-family: iranYekanFn;
+    margin: 2rem 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
